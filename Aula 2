@@ -1,0 +1,10 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main() {
+    //A linha abaixo muda a cor do texto dentro do printf
+system ("color 4");
+    printf("Ola mundo!\n");
+    system("pause");
+    return 0; 
+}
