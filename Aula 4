@@ -1,0 +1,25 @@
+/*Este programa atribui nome, sexo, idade e salario de uma pessoa e em seguida as imprime
+    criador: Laryssa Ribeiro
+    data:24/01/2026
+    */
+   #include <stdio.h>
+   #include <stdlib.h>
+
+   int main(){
+      //declaração das variaveis
+      char nome[] = "Rhayane Ribeiro";
+      char sexo = 'f';
+      int idade = 13;
+      float salario = 4250.90;
+
+      // \t da um tab na impressão
+      // \n pula de uma linha para outra para os printf não ficarem juntos na impressão
+      // %.2f imprime somente dois numeros apos a virgula na impressão
+      printf("Seus dados sao:\n");
+      printf("\tNome: %s\n", nome);
+      printf("\tsexo: %c\n", sexo);
+      printf("\tvoce tem %d anos\n", idade);
+      printf("\tVoce ganha %.2f reais por mes\n", salario);
+
+      return 0;
+   }
