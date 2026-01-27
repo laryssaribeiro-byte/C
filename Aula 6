@@ -1,0 +1,27 @@
+/*Esse programa le o sexo, idade e salario de uma pessoa e imprimeos valores lidos
+Criador: Laryssa Ribeiro
+26/01/2025*/
+
+#include <stdio.h>
+
+int main(void){
+   int idade;
+   float salario;
+   char sexo;
+
+   //leituras
+   printf("Quantos anos voce tem?\n");
+   scanf("%d", &idade);
+
+   printf("Qual e o seu salario?\n");
+   scanf("%f", &salario);
+
+   printf("qual e o seu genero? F ou M\n");
+   scanf(" %c", &sexo);
+
+   //Imprimir os valores lidos
+   printf("Voce tem %d anos, ganha R$%.2f e eh do genero %c", idade, salario, sexo);
+
+
+   return 0;
+}
