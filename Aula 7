@@ -1,0 +1,32 @@
+/*Esse programa le o nome, o endereço e o CPF de uma pessoa e os armazena em Strings
+em seguida, imprime os valores lidos
+Criador: Laryssa Ribeiro
+26/01/2025*/
+
+#include <stdio.h>
+#include <string.h>
+#define TAM_NOME 50
+#define TAM_END 100
+#define TAM_CPF 15
+
+int main(void){
+
+   char nome[TAM_NOME];
+   char end[TAM_END];
+   char cpf[TAM_CPF];
+
+   printf("Informe seu nome.");
+   fgets(nome, TAM_NOME, stdin); //sem o &
+   nome[strcspn(nome, "\n")]= '\0'; //usada para remover o ENTER
+
+   printf("iforme o seu endereco.");
+   fgets(end, TAM_END, stdin);
+   end[strcspn(end, "\n")] = '\0';
+ 
+   printf("Informe seu CPF.");
+   fgets(cpf, TAM_CPF, stdin);
+
+   printf("Seus dados:\n");
+   printf("Nome: %s\n Endereco: %s\n CPF: %s", nome, end, cpf);
+
+   return 0;
