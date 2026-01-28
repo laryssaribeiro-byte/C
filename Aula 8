@@ -1,0 +1,31 @@
+/* Faça um programa que doi numeros inteiros e imprime
+- A soma dos dois numeros;
+- O primeiro numero mmenos o segundo;
+- A parte inteira da divisão do primeiro pelo segundo;
+- O resto da divisão do primeiro pelo segundo;
+- A multiplicação dos dois numeros;
+- O primeiro dividido pelo segundo.
+Criador: Laryssa Ribeiro
+Data: 27/01/2026*/
+
+#include <stdio.h>
+
+int main(void){
+
+   int x, y, soma;
+
+   printf("Forneca os dois numeros.");
+   scanf("%d %d", &x, &y);
+   
+   soma = x + y;
+   printf("Soma: %d\n", soma);
+   printf("Subtracao; %d\n", x-y);
+   printf("Parte inteira x/y: %d\n", x/y);
+   printf("Parte inteira y/x %d\n", y/x);
+   printf("Resto de x por y: %d\n", x%y);
+   printf("Resto de y por x: %d\n", y%x);
+   printf("Multiplicacao: %d\n", x*y);
+   printf("Divisao de x por y: %f\n", (float)x/ y); // casting
+   printf("divisao de y por x: %f\n", (float) y/ x); // casting
+   return 0;
+}
