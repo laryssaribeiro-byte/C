@@ -1,0 +1,22 @@
+/*Este programa le um numero e imprime se ele é par ou impar.
+Criador: Laryssa Ribeiro
+Data: 02/02/2026*/
+
+#include <stdio.h>
+
+int main(void){
+
+   int x;
+
+   printf("Informe o numero.");
+   scanf("%d", &x);
+
+      if(x % 2 == 0)
+         printf("O numero e par.");
+      
+      else
+         printf("O numero e impar.");
+      
+
+   return 0;
+}
