@@ -1,0 +1,40 @@
+/*Este programa le as notas de 3 trabalhos e de 3 provas de um aluno, calcula a sua media final e imprime
+se ele foi aprovado, reprovado ou se ficou de recuperação
+Criador: Laryssa Ribeiro
+Data: 02/02/2026*/
+
+#include <stdio.h>
+
+int main(void)
+{
+   int t1, t2, t3;    // Notas dos trabalhos
+   int p1, p2, p3;    // Notas das provas
+   float mediatrabs;  // Media dos trabalos
+   float mediaprovas; // Media provas
+   float mediafinal;  // Media final do estudante
+
+   printf("Informe as notas dos 3 trabalhos");
+   scanf("%d %d %d", &t1, &t2, &t3);
+
+   printf("Informe as notas das 3 provas");
+   scanf("%d %d %d", &p1, &p2, &p3);
+
+   mediatrabs = (t1 + t2 + t3) / 3.0;
+   mediaprovas = (p1 + 2 * p2 + 3 * p3) / 6.0;
+
+   mediafinal = (mediaprovas + mediatrabs) / 2.0;
+
+   if (mediafinal >= 6)
+   {
+      printf("Estudante passou com media %.2f", mediafinal);
+   }
+   else if(mediafinal < 4)
+   {
+      printf("Estudante reprovou com media %.2f", mediafinal);
+   }
+   else
+   {
+      printf("Estudante ficou de recuperacao com media %.2f", mediafinal);
+   }
+   return 0;
+}
