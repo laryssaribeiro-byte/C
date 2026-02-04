@@ -1,0 +1,41 @@
+  //comparação de 3 condições
+/*Operador logico &&
+Criador: Laryssa Ribeiro
+Data: 03/02/2026*/
+
+#include <stdio.h>
+
+int main(void)
+{
+    int num;
+
+    scanf("%d", &num);
+    //comparação de 3 condições
+    if ((num > 0) && (num % 2 == 0) && (num % 3 == 0))
+    {
+        printf("numero e positivo e divisivel por 6.");
+    }
+    
+    return 0;
+}
+
+  //comparação de 2 condições
+/*Operador logico &&
+Criador: Laryssa Ribeiro
+Data: 03/02/2026*/
+
+#include <stdio.h>
+
+int main(void)
+{
+    int num;
+
+    scanf("%d", &num);
+
+    if ((num % 2 == 0) && (num % 3 == 0))
+    {
+        printf("numero e divisivel por 6.");
+    }
+    
+    return 0;
+}
