@@ -1,0 +1,19 @@
+/*Operador logico ||
+Criador: Laryssa Ribeiro
+Data: 03/02/2026*/
+
+#include <stdio.h>
+
+int main(void)
+{
+    int media, frequencia;
+
+    scanf("%d\n %d", &media, &frequencia);
+
+    if ((media < 6) || (frequencia < 75))
+    {
+        printf("Voce esta reprovado");
+    }
+
+    return 0;
+}
