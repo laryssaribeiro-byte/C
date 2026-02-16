@@ -1,0 +1,52 @@
+/*Escreva um programa que le o salario bruto de uma pessoa, a taxa de imposto de renda e a taxa de inss.
+Em seguida, mostre o seguinte menu:
+escolha uma das opçoes abaixo:
+1: Salario liquido
+2: Valor descontado pelo imposto de renda
+3: Valor descontado pelo inss
+Dada a opçao selecionada, o programa deve mostrar os valore adequadadamente. Caso nenhuma opçao valida 
+seja selecionado, uma mensagem de erro deve ser exibida.
+Criador: Laryssa Ribeiro
+Data: 16/02/2026*/
+
+#include <stdio.h>
+
+int main(void)
+{
+    float salario_bruto, i_renda, inss;
+    float salario_liq, valor_ir, valor_inss;
+    char opcao;
+
+    printf("Digite o salario bruto, taxa imposto de renda e taxa de inss\n");
+    scanf("%f %f %f", &salario_bruto, &i_renda, &inss);
+
+    //calculando os valores descontados e o salario
+    valor_ir = i_renda * salario_bruto / 100;
+    valor_inss = inss * salario_bruto / 100;
+    salario_liq = salario_bruto - valor_inss - valor_ir;
+
+    printf("Escolha uma das opcoes abaixo.\n");
+    printf("\tA: Salario liquido\n");
+    printf("\tB: Valor descontado pelo imposto de renda.\n");
+    printf("\tC: Valor descontado pelo inss.\n");
+    scanf(" %c", &opcao); // Espaço antes do % para limpar buffer
+
+    switch (opcao)
+    {
+    case 'a':
+    case 'A':
+        printf("Seu salario liquido e %.2f reais", salario_liq);
+        break;
+    case 'b':
+    case 'B':
+        printf("Desconto de imposto de renda: %.2f reais", valor_ir);
+        break;
+    case 'c':
+    case 'C':
+        printf("Desconto de inss:%.2f reais", valor_inss);
+        break;
+    default:
+        printf("Voce selecionou uma opcao invalida. Tente novamente.");
+    }
+    return 0;
+}
