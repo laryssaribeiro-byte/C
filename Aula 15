@@ -1,0 +1,19 @@
+/*Este programa le um inteiro positivo n e em seguida imprima os inteiros de 1 a n.
+Criador: Laryssa Ribeiro
+Data: 25/02/2026*/
+
+#include <stdio.h>
+
+int main(void)
+{
+    int n, i;
+    printf("Informe o numero.");
+    scanf("%d", &n);
+
+    for(i = 1; i <= n; i++)
+    {
+        printf(" %d", i);
+    }
+
+    return 0;
+}
