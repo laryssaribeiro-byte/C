@@ -1,0 +1,29 @@
+/*Escreva um algoritimo que lê um inteiro e imprime o número de digitos que ele possui
+Criador: Laryssa Ribeiro
+Data: 28/02/2026*/
+
+#include <stdio.h>
+
+int main(void)
+{
+    int n, quo, cont;
+    cont = 0;
+
+    printf("Forneca um numero.");
+    scanf("%d", &n);
+
+    quo = n;
+
+    while (quo != 0)
+    {
+        quo = quo / 10;
+        cont++;
+    }
+
+    if (n == 0)
+        printf("Possui 1 digito.");
+    else
+        printf("Possui %d digito(s).", cont);
+
+    return 0;
+}
