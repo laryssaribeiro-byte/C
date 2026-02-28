@@ -1,0 +1,45 @@
+/*Este programa apresenta um menu e soma ou multiplica dois numeros, até o usuario selecionar a opção sair
+Criador: Laryssa Ribeiro
+Data: 28/02/2026*/
+
+#include <stdio.h>
+
+int main(void)
+{
+    int a, b; // numeros a serem somados ou multiplicados
+    int opcao = 0;
+
+    while (opcao != 3)
+    {
+        printf("\nOpcoes do menu:\n");
+        printf("1. somar dois numeros;\n");
+        printf("2. Multiplicar dois numeros;\n");
+        printf("3. Sair\n");
+        printf("O que deseja fazer?\n");
+        scanf("%d", &opcao);
+
+        switch (opcao)
+        {
+        case 1:
+            printf("Informe os dois numeros.");
+            scanf("%d %d", &a, &b);
+            printf("Soma: %d\n", a + b);
+            break;
+
+        case 2:
+            printf("Informe os dois numeros.");
+            scanf("%d %d", &a, &b);
+            printf("Multiplicacao; %d\n", a * b);
+            break;
+
+        case 3:
+            printf("Obrigado por ter utilizado o sistema.");
+            break;
+
+        default:
+            printf("Opcao invalida. tente novamente");
+        }
+    }
+
+    return 0;
+}
