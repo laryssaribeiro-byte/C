@@ -1,0 +1,19 @@
+/*Leia um inteiro positivo e n e em seguida imprima a tabuada deste numero
+Data: 25/02/2026*/
+
+#include <stdio.h>
+
+int main(void)
+{
+   int n, j;
+
+   printf("informe o numero.");
+   scanf("%d", &n);
+
+   for(j = 0; j <= 9; j = j + 1)
+   {
+    printf("%d x %d = %d\n", n, j, n*j);
+   }
+   
+    return 0;
+}
