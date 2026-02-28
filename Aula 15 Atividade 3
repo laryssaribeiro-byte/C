@@ -1,0 +1,22 @@
+/*Este programa le um intero positivo n e em seguida imprime o fatorial deste numero
+Criador: Laryssa Ribeiro
+Data: 28/02/2026*/
+
+#include <stdio.h>
+
+int main(void)
+{
+   int n, i, fat;
+
+   fat = 1;
+   printf("informe o numero.");
+   scanf("%d", &n);
+
+   for(i = n; i >= 1; i --)
+   {
+    fat = fat * i;
+   }
+   printf("Fatorial de %d e %d", n, fat);
+   
+    return 0;
+}
